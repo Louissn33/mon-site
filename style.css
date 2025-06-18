@@ -46,16 +46,9 @@ li {
   transition: all 0.3s ease;
   text-align: center;
   padding: 20px 30px;
+}
 
-}
-.carre-bordure {
-border-right: 1px solid #8e86b5;
-border-bottom: 1px solid #8e86b5;
-padding: 50px;
-width: 50%;
-margin: auto;
-margin-bottom: 80px;
-}
+
 .bouton-portfolio {
   text-align: center;
   margin-top: 20px;
@@ -376,4 +369,33 @@ input[type='submit'] {
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .section-acceuil .ligne-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 5px; /* Réduit les bords au strict minimum */
+    margin: 0;
+  }
 
+  .section-acceuil .ligne-photos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0; /* Supprime tout espace auto éventuel */
+  }
+
+  .section-acceuil {
+    padding-left: 0;
+    padding-right: 0;
+  }
+.carre-bordure {
+border-right: 1px solid #8e86b5;
+border-bottom: 1px solid #8e86b5;
+padding: 50px;
+width: 50%;
+margin: auto;
+margin-bottom: 80px;
+}

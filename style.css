@@ -62,6 +62,15 @@ a:hover {
   background: linear-gradient(#696484, #8788ba);
   text-decoration: none;
 }
+.carre-bordure {
+border-right: 1px solid #8e86b5;
+border-bottom: 1px solid #8e86b5;
+padding: 50px;
+width: 50%;
+margin: auto;
+margin-bottom: 80px;
+}
+
 
 header,
 footer {
@@ -357,10 +366,11 @@ input[type='submit'] {
 }
 
 /* Responsive : inverser l'ordre en mobile */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .accueil-introduction {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 40px;
   }
 
   .accueil-introduction img {
@@ -368,13 +378,12 @@ input[type='submit'] {
     height: auto;
     text-align: center;
   }
-}
-@media screen and (max-width: 768px) {
+
   .section-acceuil .ligne-photos {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 0 5px; /* Réduit les bords au strict minimum */
+    padding: 0 5px;
     margin: 0;
   }
 
@@ -384,18 +393,20 @@ input[type='submit'] {
     object-fit: cover;
     border-radius: 0;
     box-shadow: none;
-    margin: 0; /* Supprime tout espace auto éventuel */
+    margin: 0;
   }
 
   .section-acceuil {
     padding-left: 0;
     padding-right: 0;
   }
-.carre-bordure {
-border-right: 1px solid #8e86b5;
-border-bottom: 1px solid #8e86b5;
-padding: 50px;
-width: 50%;
-margin: auto;
-margin-bottom: 80px;
+
+  .carre-bordure {
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+  }
 }
